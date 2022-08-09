@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav ul {
+    background-color: #237280;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+nav ul li {
+    margin: 20px;
+}
+
+ul li a {
+    color: #eef4f5e8;
+    font-weight: 600;
+}
+
+ul li a:hover {
+    font-weight: 700;
+    text-decoration: underline #4fa7b2;
+    text-decoration-thickness: 0.135rem;
+    text-underline-offset: 0.25rem;
+}
+
+ nav h1 {
+    max-width: 70%;
+    position: relative;
+    left: 3rem;
+    top: 3.3rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration-line: overline;
+    font-size: 2rem;
+   
+}
+.banner {
+    background-image: url(./img/banner.jpg);
+    height: 160px;
+
+}
+
+.container-pratos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.prato {
+    margin: 10px;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    background-color: #237280;
+    color: white;
+    border-radius: 5px;
+}
+ .prato p.descricao {
+    text-align: justify;
+    max-width: 18rem;
+    padding: 0 2rem;
+ }
+ 
+  .prato img {
+     max-width: 16rem;
+     border-radius: 5px;
+     height: 200px;
+    }
+    
+.prato a  {
+    color: #fff;
+}
+.btn-comprar{
+    margin: 4px;
+    width: 10rem;
+
+    background-color: #27808b;
+    border: 1px solid #4fa7b2;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.btn-comprar:hover {
+    background-color: #4fa8b3;
+    
+}
+
+
+/* Start Estilização da página pratos */
+
+
+.others, .pagina-prato h2 {
+    color:#27808b;
+}
+.pagina-prato {
+    padding: 10px;
+}
+.pagina-prato a{
+    color: #fff;
+}
+
+.pagina-prato img {
+    max-width: 15rem;
+    border-radius: 5px;
+} 
+
+.pagina-prato div.descricao {
+    width: 22rem;
+    text-align: justify;
+    
+    position: relative;
+    left: 17rem;
+    bottom: 12rem;
+}
+
+
+
+/* End pag-pratos */
+
+
+footer {
+    background-color: #237280;
+    transition: opacity .2s ease-in;
+}
+
+.footer-menu {
+    padding: 12px 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    row-gap: 20px;
+    text-align: center;
+
+}
+
+.autoral {
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+/* Media Query */
+
+@media (max-width: 420px) {
+    .container-pratos{
+        display: block;
+    }
+    nav h1 {
+        left: 2rem;
+        top: 0.01rem;
+        color: #237280;
+    }
+}
