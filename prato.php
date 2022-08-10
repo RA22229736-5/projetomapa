@@ -1,5 +1,7 @@
 <?php include 'layout/cabecalho.php';
-include 'validadores.php';
+
+require("dados.php");
+
 ?>
 <section>
     <div class="pagina-prato">
@@ -41,7 +43,6 @@ include 'validadores.php';
             <!-- <h2>"<?= $value['marmita']; ?>"</h2> -->
             <img src="<?= $value['figura']; ?>" />
 
-            <!-- <p class=" descricao">Comida feita com Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
             <p class="btn-comprar">
                 <a href="prato.php?id=<?= $value['id']; ?>"> Provar mais  </a>
             </p>
