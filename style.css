@@ -1,8 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;
 
     text-decoration: none;
     list-style: none;
@@ -59,7 +61,7 @@ ul li a:hover {
 }
 
 .prato {
-    margin: 10px;
+    margin: 5px 5px 5px 0;
     text-align: center;
     padding: 20px 0 10px 0;
     background-color: #237280;
@@ -81,8 +83,12 @@ ul li a:hover {
 .prato a  {
     color: #fff;
 }
+#btn_prato{
+    margin: 10px 0;
+
+}
 .btn-comprar{
-    margin: 4px;
+    margin: 4px auto;
     width: 10rem;
 
     background-color: #27808b;
@@ -106,7 +112,7 @@ ul li a:hover {
     color:#27808b;
 }
 .pagina-prato {
-    padding: 10px;
+    padding-top: 20px;
 }
 .pagina-prato a{
     color: #fff;
@@ -126,7 +132,9 @@ ul li a:hover {
     bottom: 12rem;
 }
 
-
+em {
+    text-decoration: underline #4fa7b2;
+}
 
 /* End pag-pratos */
 
@@ -163,5 +171,8 @@ footer {
         left: 2rem;
         top: 0.01rem;
         color: #237280;
+    }
+    .prato {
+        margin: 5px auto;
     }
 }

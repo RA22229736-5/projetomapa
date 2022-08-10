@@ -3,31 +3,24 @@
 require("dados.php");
 
 ?>
-<section>
-    <div class="pagina-prato">
+<section class="pagina-prato">   
         <?php
-        $id = $_GET['id'];
-
-        foreach ($items as $key => $value) {
-            if ($value['id'] ==  $id) {
-
-        ?>
-        <article class="pagina-prato">
+            if(isset($_GET['id']) && !empty($_GET['id'])){
+                $id = $_GET['id'];
+            foreach ($items as $key => $value) {
+                if ($value['id'] ==  $id) {
+            ?>
             <h2><?= $value['marmita']; ?></h2>
             <img src="<?= $value['figura']; ?>" />
             
-            <div class=" descricao">
+            <div class="descricao">
                 <p><?= $value['detalhes'] ?></p>
+                <p class="btn-comprar" id="btn_prato"> <a href="index.php">Provar mais</a> </p>
             </div>
-
-            <!-- <p class="btn-comprar"> 
-                <a href="prato.php?id=<?= $value['id']; ?>"> Provar mais</a>
-            </p> -->
-            
-            <?php }
-        } ?>
-        </article>
-    </div>
+            <?php } }
+            }else {
+            echo "<h2><em>Página Não Encontrada!</em></h2>";}
+        ?>
 </section>
 
 
