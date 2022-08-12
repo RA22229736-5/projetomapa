@@ -11,7 +11,7 @@
         </form>
         <li></li>
         <li><a href="#">Blog</a></li>
-        <li><?=$contato;?><?php  $icon_delivery; ?></li>
+        <li><?=$contato;?></li>
         <li><a href="contato.php">Contato</a></li>
         <li><a href="#">Redes Sociais</a></li>
         <li><a href="#">Politica de Privacidade</a></li>
