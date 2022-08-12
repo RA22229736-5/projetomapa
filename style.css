@@ -118,12 +118,11 @@ nav h1 a {
 
 }
 
-
-/* Start Estilização da página pratos */
-
+/* Start Estilização da página prato */
 
 .others,
 .pagina-prato h2 {
+    margin-left: 11em;
     color: #27808b;
 }
 
@@ -170,7 +169,7 @@ footer {
     transition: opacity .2s ease-in;
 }
 
-.footer-menu {
+.footer-menu{
     padding: 12px 0;
     width: 100%;
     display: grid;
@@ -178,8 +177,19 @@ footer {
     column-gap: 10px;
     row-gap: 20px;
     text-align: center;
+}
+.footer-menu li{
+    color: #fff;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+#delivery {
+    width: 4%;
+    opacity: .3;
 
 }
+
 
 /* Formulário */
 #dados_formulario {
@@ -192,7 +202,7 @@ footer {
     align-items: center;
     text-align: right;
     color: white;
-    font-weight: 600;
+   
 }
 
 .form-footer {

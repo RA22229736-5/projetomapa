@@ -16,6 +16,7 @@ require("dados.php");
             <div class="descricao">
                 <p><?= $value['detalhes'] ?></p>
                 <p><?= $value['tamanho'] ?></p>
+                <p><?= $value['preco'] ?></p>
                 <p class="btn-comprar" id="btn_prato"> <a href="index.php">Provar mais</a> </p>
             </div>
             <hr/>

@@ -9,7 +9,7 @@ require("dados.php");
     <article class="prato">
         <h2><?= $value['marmita']; ?></h2>
         <img src="<?= $value['figura']; ?>" title="<?=$value['title_img'];?>" alt="<?=$value['title_img'];?>" />
-        <p class="descricao"> <?=substr( $value['detalhes'], 0, 25) ?>...</p>           
+        <p class="descricao"> <?=substr( $value['detalhes'], 0, 20) ?>...</p>           
         <p class="btn-comprar"> <a href="prato.php?id=<?= $value['id']; ?>"> Provar mais </a></p>           
     </article>
     <?php } ?>

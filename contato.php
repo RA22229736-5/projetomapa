@@ -2,13 +2,14 @@
 require("layout/cabecalho.php");
 ?>
 
-<ul>
-    <li>A Rita da Marmita entrega _h_--:</li>
-    <li>WhatsApp 11 99192-9394</li>
-    <li>Rod. dos Imigrantes, 1</li>
-    <li>Jabaquara, São Paulo - SP,</li>
-    <li>CEP 04329-900</li>
-</ul>
+<div class="pagina-prato descricao">
+    <h2>A Rita da Marmita entrega</h2>
+    <p>WhatsApp 11 99192-9394
+    <img id="delivery" src="./img/icondelivery.png"/></p>
+    <p>Rod. dos Imigrantes, 1</p>
+    <p>Jabaquara, São Paulo - SP,</p>
+    <p>CEP 04329-900</p>
+</div>
 
 
 <section>
