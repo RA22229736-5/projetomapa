@@ -11,12 +11,12 @@
         </form>
         <li></li>
         <li><a href="#">Blog</a></li>
-        <li><a href="#">Sobre</a></li>
+        <li><?=$contato;?><?php  $icon_delivery; ?></li>
         <li><a href="contato.php">Contato</a></li>
         <li><a href="#">Redes Sociais</a></li>
         <li><a href="#">Politica de Privacidade</a></li>
         <li><a href="#">Termo de Uso</a></li>
     </ul>
     <hr />
-    <p class="autoral"><?php $author ?> </p>
+    <p class="autoral"><?=$author;?> </p>
 </footer>
