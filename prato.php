@@ -5,24 +5,26 @@ require("dados.php");
 ?>
 <section class="pagina-prato">   
         <?php
-            if(isset($_GET['id']) && !empty($_GET['id'])){
+            
+            if(isset($_GET['id']) && !empty($_GET['id'] && $_GET['id'] < 8)){
                 $id = $_GET['id'];
             foreach ($items as $key => $value) {
                 if ($value['id'] ==  $id) {
             ?>
             <h2><?= $value['marmita']; ?></h2>
-            <img src="<?= $value['figura']; ?>" />
-            
+            <img src="<?= $value['figura']; ?>" />            
             <div class="descricao">
                 <p><?= $value['detalhes'] ?></p>
+                <p><?= $value['tamanho'] ?></p>
                 <p class="btn-comprar" id="btn_prato"> <a href="index.php">Provar mais</a> </p>
             </div>
+            <hr/>
             <?php } }
-            }else {
+            }else{
             echo "<h2><em>Página Não Encontrada!</em></h2>";}
         ?>
+       
 </section>
-
 
 <section>
     <h1 class="others">Outros Pratos</h1>
@@ -33,7 +35,7 @@ require("dados.php");
 
         ?>
         <article class="prato">
-            <!-- <h2>"<?= $value['marmita']; ?>"</h2> -->
+            <h2>"<?= $value['marmita']; ?>"</h2>
             <img src="<?= $value['figura']; ?>" />
 
             <p class="btn-comprar">
