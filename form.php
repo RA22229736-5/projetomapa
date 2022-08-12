@@ -21,8 +21,8 @@ if (isset($_POST)) {
 }
 ?>
 <div id="dados_formulario">
-    <h4>Olá <?=$nome?> sua inscrição foi realizada com sucesso!</h4>    
-    <em>Você receberá semanalmente no cardápio em seu email <?=$email;?> </em>
+    <p>Olá <strong><?=$nome?></strong> sua inscrição foi realizada com sucesso!</p>    
+    <p id="form">Você receberá semanalmente nosso cardápio em seu email <strong> <?=$email;?> </strong></p>
 </div>
 
 

@@ -157,11 +157,10 @@ nav h1 a {
     bottom: 10rem;
 }
 
-
-em {
-    text-decoration: underline #4fa7b2;
+.preco-tammanho {
+    display: flex;
+    justify-content: space-evenly;
 }
-
 /* Footer */
 
 footer {
@@ -185,8 +184,10 @@ footer {
 }
 
 #delivery {
-    width: 4%;
-    opacity: .3;
+    width: 2%;
+    opacity: .4;
+    position: absolute;
+    right: 36rem;
 
 }
 
